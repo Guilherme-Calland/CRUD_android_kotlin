@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="8sp"
+    android:layout_marginTop="32sp"
+    android:layout_marginRight="8sp"
+    android:layout_marginBottom="32sp"
+    android:orientation="vertical"
+    tools:context=".AddNotesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_layout"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20sp">
+
+        <EditText
+            android:id="@+id/etTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            android:ems="10"
+            android:hint="type your text title here"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20sp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="type your text descrition here"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/bAddNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background_layout"
+            android:onClick="buAdd"
+            android:text="add notes"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>
